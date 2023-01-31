@@ -104,16 +104,16 @@
           "url": "https://solweb.tper.it/resources/files/opendata/gommagtfsbo_20230127.zip",
           "filename": "TPERBO-stops.txt",
           "agencyId": "TPERBO",
-          "agencyName": "Tper spa",
-          "layerName": "Stop"
+          "agencyName": "Tper",
+          "layerName": "fermata"
         },
         {
           "layerId": "stops",
           "url": "https://solweb.tper.it/resources/files/opendata/gommagtfsfe_20230127.zip",
           "filename": "TPERFE-stops.txt",
           "agencyId": "TPERFE",
-          "agencyName": "Tper spa",
-          "layerName": "Stop"
+          "agencyName": "Tper",
+          "layerName": "fermata"
         }
       ]
     },
