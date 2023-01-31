@@ -99,7 +99,7 @@
         {
           "layerId": "stops",
           "url": "https://solweb.tper.it/resources/files/opendata/gommagtfsbo_20230127.zip",
-          "filename": "stops.txt",
+          "filename": "TPERBO-stops.txt",
           "agencyId": "TPERBO",
           "agencyName": "Tper spa",
           "layerName": "Stop"
@@ -107,7 +107,7 @@
         {
           "layerId": "stops",
           "url": "https://solweb.tper.it/resources/files/opendata/gommagtfsfe_20230127.zip",
-          "filename": "stops.txt",
+          "filename": "TPERFE-stops.txt",
           "agencyId": "TPERFE",
           "agencyName": "Tper spa",
           "layerName": "Stop"
