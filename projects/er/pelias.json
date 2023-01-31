@@ -31,8 +31,8 @@
       "libpostal": { "url": "http://libpostal:4400" }
     },
     "defaultParameters": {
-      "focus.point.lat": 45.52,
-      "focus.point.lon": -122.67
+      "focus.point.lat": 44.69,
+      "focus.point.lon": 10.93
     }
   },
   "imports": {
@@ -53,28 +53,32 @@
     },
     "geonames": {
       "datapath": "/data/geonames",
-      "countryCode": "ALL"
+      "countryCode": "IT"
     },
     "openstreetmap": {
       "download": [
-        { "sourceURL": "https://s3.amazonaws.com/metro-extracts.nextzen.org/portland_oregon.osm.pbf" }
+        { "sourceURL": "http://download.geofabrik.de/europe/italy/nord-est-latest.osm.pbf" }
       ],
       "leveldbpath": "/tmp",
       "datapath": "/data/openstreetmap",
       "import": [{
-        "filename": "portland_oregon.osm.pbf"
+        "filename": "nord-est-latest.osm.pbf"
       }]
     },
     "openaddresses": {
       "datapath": "/data/openaddresses",
       "files": [
-        "us/or/portland_metro.csv",
-        "us/or/city_of_salem.csv",
-        "us/or/marion_and_polk.csv",
-        "us/or/marion.csv",
-        "us/or/hood_river.csv",
-        "us/wa/city_of_richland.csv",
-        "us/wa/clark.csv"
+        "it/45/bo.csv",
+        "it/45/bologna.csv",
+        "it/45/fc.csv",
+        "it/45/fe.csv",
+        "it/45/ferrara.csv",
+        "it/45/mo.csv",
+        "it/45/pc.csv",
+        "it/45/pr.csv",
+        "it/45/ra.csv",
+        "it/45/re.csv",
+        "it/45/rn.csv"
       ]
     },
     "polyline": {
@@ -84,87 +88,34 @@
     "whosonfirst": {
       "datapath": "/data/whosonfirst",
       "importPostalcodes": true,
-      "countryCode": "US",
+      "countryCode": "IT",
       "importPlace": [
-        "85688513",
-        "85688623"
+        "404227509"
       ]
     },
     "transit": {
       "datapath": "/data/transit",
       "feeds": [
         {
-          "layerId": "bikeshare",
-          "url": "https://gbfs.biketownpdx.com/gbfs/en/station_information.json",
-          "filename": "BIKETOWN-hubs.json",
-          "agencyId": "BIKETOWN",
-          "agencyName": "BIKETOWN",
-          "layerName": "bikeshare"
-        },
-        {
           "layerId": "stops",
-          "url": "http://developer.trimet.org/schedule/gtfs.zip",
-          "filename": "TRIMET-stops.txt",
-          "agencyId": "TRIMET",
-          "agencyName": "TriMet",
+          "url": "https://solweb.tper.it/resources/files/opendata/gommagtfsbo_20230127.zip",
+          "filename": "stops.txt",
+          "agencyId": "TPERBO",
+          "agencyName": "Tper spa",
           "layerName": "Stop"
         },
         {
           "layerId": "stops",
-          "url": "http://www.c-tran.com/images/Google/GoogleTransitUpload.zip",
-          "filename": "C-TRAN-stops.txt",
-          "agencyId": "C-TRAN",
-          "agencyName": "C-TRAN",
-          "layerName": "Stop"
-        },
-        {
-          "layerId": "stops",
-          "url": "http://oregon-gtfs.com/gtfs_data/rideconnection-or-us/rideconnection-or-us.zip",
-          "filename": "RIDECONNECTION-stops.txt",
-          "agencyId": "RIDECONNECTION",
-          "agencyName": "Ride Connection",
-          "layerName": "Stop"
-        },
-        {
-          "layerId": "stops",
-          "url": "http://oregon-gtfs.com/gtfs_data/sandy-or-us/sandy-or-us.zip",
-          "filename": "SAM-stops.txt",
-          "agencyId": "SAM",
-          "agencyName": "SAM",
-          "layerName": "Stop"
-        },
-        {
-          "layerId": "stops",
-          "url": "http://data.trilliumtransit.com/gtfs/wilsonville-or-us/wilsonville-or-us.zip",
-          "filename": "SMART-stops.txt",
-          "agencyId": "SMART",
-          "agencyName": "SMART",
-          "layerName": "Stop"
-        },
-        {
-          "layerId": "stops",
-          "url": "http://oregon-gtfs.com/gtfs_data/swanisland-or-us/swanisland-or-us.zip",
-          "filename": "SWAN-stops.txt",
-          "agencyId": "SWAN",
-          "agencyName": "Swan Island",
+          "url": "https://solweb.tper.it/resources/files/opendata/gommagtfsfe_20230127.zip",
+          "filename": "stops.txt",
+          "agencyId": "TPERFE",
+          "agencyName": "Tper spa",
           "layerName": "Stop"
         }
       ]
     },
     "interpolation": {
       "download": {
-        "tiger": {
-          "datapath": "/data/tiger",
-          "states": [
-            { "state_code": 41, "county_code": 67, "name": "Washington County, OR" },
-            { "state_code": 41, "county_code": 51, "name": "Multnomah County, OR" },
-            { "state_code": 41, "county_code": 5,  "name": "Clackamas County, OR" },
-            { "state_code": 41, "county_code": 71, "name": "Yamhill County, OR" },
-            { "state_code": 41, "county_code": 47, "name": "Marion County, OR" },
-            { "state_code": 41, "county_code": 53, "name": "Polk County, OR" },
-            { "state_code": 53, "county_code": 11, "name": "Clark County, WA" }
-          ]
-        }
       }
     }
   }
