@@ -25,10 +25,10 @@
   },
   "api": {
     "services": {
-      "placeholder": { "url": "http://placeholder:4100" },
-      "pip": { "url": "http://pip:4200" },
-      "interpolation": { "url": "http://interpolation:4300" },
-      "libpostal": { "url": "http://libpostal:4400" }
+      "placeholder": { "url": "http://localhost:4100" },
+      "pip": { "url": "http://localhost:4200" },
+      "interpolation": { "url": "http://localhost:4300" },
+      "libpostal": { "url": "http://localhost:4400" }
     },
     "defaultParameters": {
       "focus.point.lat": 44.69,
